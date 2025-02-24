@@ -1,9 +1,17 @@
 import React from 'react'
 
 
-const todoList = () => {
+type TodoListProps = {
+  items : {Id : string, text : string}[]
+}
+
+const todoList : React.FC<TodoListProps> = (props) => {
+    console.log(props.items)
+
   return (
-    <div>todoList</div>
+    <div className='my-5'>todoList
+
+    </div>
   )
 }
 
